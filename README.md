@@ -39,7 +39,7 @@ Step 2. Create a conda environment.
 
 ```
 
-conda create --prefix venv python=3.7 -y
+conda create --prefix venv python -y
 
 ```
 
