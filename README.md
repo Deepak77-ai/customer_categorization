@@ -1,155 +1,87 @@
-📊 Customer Segmentation & Cluster Prediction System
-📌 Project Overview:
 
-- This project demonstrates a real-world customer segmentation system using Clustering + Classification.
-- First, customers are grouped into clusters based on similar behavior.
-- Then, a machine learning model predicts the most suitable cluster for new customers.
-- The final output is a human-readable customer segment, not just a number.
-- This approach mimics how businesses perform customer profiling and targeting.
+# Customer Personality Segmentation
 
+## Problem statement
 
+In this data science project, you will build a machine learning system which will be able predict the personality of the customer using machine learning algorithms. This project will be very usefull for malls, various stores and companies which are product based. Based on customer's personal details and purchase details, we can cluster them and we can predict the customer's cluster number using classification techniques.
 
-🎯 Problem Statement
+## Solution Proposed
 
-Businesses often have customer data but do not know:
-- Which customers are high value
-- Which customers are regular
-- Which customers are low value
-- The goal of this project is to:
-- Segment customers into meaningful groups using clustering
+Now the question is how to dynamically predict the cluster of the customer ?. One of the approaches which we can use of machine learning approach, where we can cluster the customer based on the details we have and predict the cluster type based on the domain knowledge and leverage previous customer data to predict the cluster.
 
-Predict the correct segment for new customers using a trained model
+Dataset used
+ <html>
+<a href="https://github.com/entbappy/Branching-tutorial/blob/master/marketing_campaign.zip"> Dataset Link</a>
+</html>
 
 
 
-🧠 Core Idea (Very Important ⭐)
+## Tech Stack Used
 
-- Clusters are discovered first, then predicted.
+1. Python
+2. Machine learning algorithms
+3. stream-lit
 
-- This project does NOT directly classify customers initially.
-- Instead, it follows a two-step intelligent approach:
 
-- Unsupervised Learning (Clustering) → Discover patterns
+## How to run
 
-- Supervised Learning (Classification) → Predict patterns for new data
+go to my live stream-lit app --> https://customercategorization-r6fh22kyxtv7zyctvtteay.streamlit.app/
 
+Step 1. Cloning the repository.
 
+```
 
-🔁 Project Workflow (Simple & Clear)
-1️⃣ Data Understanding & EDA
+https://github.com/Deepak77-ai/customer_categorization/
+```
 
-- Understand features and data distribution
+Step 2. Create a conda environment.
 
-- Detect missing values and outliers
+```
 
-- Identify important behavioral variables
+conda create --prefix venv python=3.7 -y
 
+```
 
+```
 
-2️⃣ Data Preprocessing
+conda activate venv/
 
-- Handle missing values
+```
 
-- Encode categorical variables (if any)
+Step 3. Install the requirements
 
-- Scale numerical features (done properly to avoid data leakage)
+```
 
+pip install -r requirements.txt
 
+```
 
-3️⃣ Customer Clustering (Unsupervised Learning)
 
-- Applied Agglomerative Clustering
+Step 4. Run the application server 
 
-- Customers are grouped based on similarity
+```
 
-- Each customer gets a cluster ID (0, 1, 2, …)
+"python app.py" or "streamlit run app.py"
 
-⚠️ Cluster numbers have NO meaning by themselves
-They are just identifiers.
+```
 
-Example:
+## Project Architecture -
 
-Customer A → Cluster 0
-Customer B → Cluster 1
-Customer C → Cluster 2
+![WhatsApp Image 2022-09-22 at 15 29 19](https://user-images.githubusercontent.com/71321529/192722336-54016f79-89ef-4c8c-9d71-a6e91ebab03f.jpeg)
 
 
+## Models Used
 
-4️⃣ Cluster Interpretation (MOST IMPORTANT STEP ⭐)
+* [K-Means](https://www.javatpoint.com/k-means-clustering-algorithm-in-machine-learning)
+* [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 
-Clusters are interpreted using average feature values per cluster.
+From these above models after hyperparameter optimization we selected these two models which were K-Means for clustering and Logistic Regression for classification and used the following in Pipeline.
 
-df.groupby("cluster").mean()
+* GridSearchCV is used for Hyperparameter Optimization in the pipeline.
 
 
-This tells us:
+## Conclusion
 
-- Which cluster has high income
+- This Project can be used in real-life by Users.
 
-- Which cluster spends more
 
-- Which cluster purchases frequently
-
-📌 This step converts clusters into business knowledge.
-
-
-
-5️⃣ Assigning Business Meaning to Clusters
-
-Based on statistical analysis:
-
-Cluster ID	Customer Segment
-0	Low Value Customers
-1	Regular Customers
-2	High Value Customers
-
-Now clusters become real-world customer segments.
-
-
-
-6️⃣ Classification Model (Supervised Learning)
-
-A Logistic Regression model is trained to learn:
-
-Customer Features  →  Cluster ID
-
-
-This allows the system to:
-
-- Accept new customer data
-
-- Predict which existing cluster they belong to
-
-
-
-🤔 What Does “Predicted Cluster” Mean?
-
-When the application shows:
-
-Predicted Cluster: 2
-
-It means:
-
-Based on learned patterns, the model predicts that this new customer belongs to Cluster 2, which represents High Value Customers.
-
-✔ It does NOT create a new cluster
-✔ It assigns the customer to an existing segment
-
-
-
-🖥️ Application Output (User-Friendly)
-
-Instead of showing only numbers, the app displays:
-
-- Predicted Cluster: 2 → High Value Customers
-- This makes the result business-understandable, not technical.
-
-
-
-🛠️ Technologies Used
-
-- Python
-- Pandas & NumPy
-- Matplotlib & Seaborn
-- Scikit-learn
-- Streamlit
