@@ -25,7 +25,8 @@ Dataset used
 
 ## How to run
 
-go to my live stream-lit app (sometimes it may take few sec to open) --> https://customercategorization-r6fh22kyxtv7zyctvtteay.streamlit.app/
+go to my live stream-lit app (sometimes it may take few sec to open) -->
+https://customercategorization-r6fh22kyxtv7zyctvtteay.streamlit.app/
 
 Step 1. Cloning the repository.
 
