@@ -25,7 +25,7 @@ Dataset used
 
 ## How to run
 
-go to my live stream-lit app --> https://customercategorization-r6fh22kyxtv7zyctvtteay.streamlit.app/
+go to my live stream-lit app (sometimes it may take few sec to open) --> https://customercategorization-r6fh22kyxtv7zyctvtteay.streamlit.app/
 
 Step 1. Cloning the repository.
 
@@ -64,10 +64,6 @@ Step 4. Run the application server
 "python app.py" or "streamlit run app.py"
 
 ```
-
-## Project Architecture -
-
-![WhatsApp Image 2022-09-22 at 15 29 19](https://user-images.githubusercontent.com/71321529/192722336-54016f79-89ef-4c8c-9d71-a6e91ebab03f.jpeg)
 
 
 ## Models Used
