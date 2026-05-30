@@ -17,7 +17,7 @@
 ## 📸 Screenshots
 
 # | Input Form |  
-|:---:|:---:|
+
 | <img width="1909" height="916" alt="Screenshot 2026-05-30 143022" src="https://github.com/user-attachments/assets/79d810cf-c68a-4abf-aac4-d613e4723e5e" />
 
 # | Prediction Result |
