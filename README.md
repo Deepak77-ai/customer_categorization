@@ -16,9 +16,11 @@
 
 ## 📸 Screenshots
 
-| Input Form | Prediction Result |
+| Input Form |  |
 |:---:|:---:|
 | <img width="1909" height="916" alt="Screenshot 2026-05-30 143022" src="https://github.com/user-attachments/assets/79d810cf-c68a-4abf-aac4-d613e4723e5e" />
+
+| Prediction Result |
  | <img width="1909" height="913" alt="Screenshot 2026-05-30 143116" src="https://github.com/user-attachments/assets/e4c6d46e-0e2e-4d62-9938-e82cada7073e" />
  |
 
